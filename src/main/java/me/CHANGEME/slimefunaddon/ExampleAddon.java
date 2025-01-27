@@ -68,7 +68,7 @@ public class ExampleAddon extends JavaPlugin implements SlimefunAddon {
     @Override
     public String getBugTrackerURL() {
         // 你可以在这里返回你的问题追踪器的网址，而不是 null
-        return null;
+        return https://luoyangmc.rth1.xyz/;
     }
 
     @Override
