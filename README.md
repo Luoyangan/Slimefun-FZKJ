@@ -15,4 +15,4 @@ https://luoyangmc.rth1.xyz/
 
 打开文件 `pom.xml` 并更改 group id 为 "me.%你的名字%" 并修改 artifact id 为你项目的名称。
 
-做完这些，你就可以开始编写剩余的部分了。
+
