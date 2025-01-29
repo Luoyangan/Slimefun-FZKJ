@@ -12,8 +12,9 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 
-public class ExampleAddon extends JavaPlugin implements SlimefunAddon {
+public class YubaTechnology extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
@@ -57,6 +58,7 @@ public class ExampleAddon extends JavaPlugin implements SlimefunAddon {
          * 来自粘液科技本体的配方类型将会自动将配方添加到对应的机器中。
          */
         SlimefunItem item = new SlimefunItem(itemGroup, slimefunItem, RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
+
         item.register(this);
     }
 
@@ -68,7 +70,8 @@ public class ExampleAddon extends JavaPlugin implements SlimefunAddon {
     @Override
     public String getBugTrackerURL() {
         // 你可以在这里返回你的问题追踪器的网址，而不是 null
-        return https://luoyangmc.rth1.xyz/;
+        // Bug 修复：将 https 改为 "https"
+        return "https://luoyangmc.rth1.xyz/";
     }
 
     @Override
