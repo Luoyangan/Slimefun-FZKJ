@@ -8,7 +8,7 @@ author: Luoyangan
 description: Cosmichigh-tech
 
 ## CHANGE 指向你的 JavaPlugin 主类
-main: me.luoyangan.yubatechnology
+main: me.luoyangan.yubatechnology.YubaTechnology
 
 ## 你可以更改为你的项目仓库地址，或者你的个人网站。你也可以移除此项目。
 website: https://luoyangmc.rth1.xyz/
