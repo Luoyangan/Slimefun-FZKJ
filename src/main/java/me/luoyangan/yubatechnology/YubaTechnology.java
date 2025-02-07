@@ -29,7 +29,7 @@ public class YubaTechnology extends JavaPlugin implements SlimefunAddon {
          * 1. 创建分类
          * 分类的显示物品将使用以下物品
          */
-        ItemStack itemGroupItem = new CustomItemStack(Material.DIAMOND, "&b腐竹科技");
+        ItemStack itemGroupItem = new CustomItemStack(Material.DIAMOND, "&x&e&f&7&1&f&2腐&x&e&e&9&6&c&6竹&x&e&d&b&a&9&a科&x&e&c&d&f&6&e技");
 
         // 给分类提供一个独一无二的ID
         NamespacedKey itemGroupId = new NamespacedKey(this, "addon_category");
