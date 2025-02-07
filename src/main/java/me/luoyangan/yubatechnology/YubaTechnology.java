@@ -29,9 +29,9 @@ public class YubaTechnology extends JavaPlugin implements SlimefunAddon {
          * 1. 创建分类
          * 分类的显示物品将使用以下物品
          */
-        ItemStack itemGroupItem = new CustomItemStack(Material.DIAMOND, "&4附属分类");
+        ItemStack itemGroupItem = new CustomItemStack(Material.DIAMOND, "&b腐竹科技");
 
-        // 给你的分类提供一个独一无二的ID
+        // 给分类提供一个独一无二的ID
         NamespacedKey itemGroupId = new NamespacedKey(this, "addon_category");
         ItemGroup itemGroup = new ItemGroup(itemGroupId, itemGroupItem);
 
@@ -40,7 +40,7 @@ public class YubaTechnology extends JavaPlugin implements SlimefunAddon {
          * 这个类是 ItemStack 的扩展，拥有多个构造函数
          * 重要：每个物品都得有一个独一无二的ID
          */
-        SlimefunItemStack slimefunItem = new SlimefunItemStack("COOL_DIAMOND", Material.DIAMOND, "&4炫酷的钻石", "&c+20% 炫酷");
+        SlimefunItemStack slimefunItem = new SlimefunItemStack("COOL_DIAMOND", Material.DIAMOND, "&d炫酷的钻石", "&c+1000% 炫酷");
 
         /*
          * 3. 创建配方
@@ -48,7 +48,11 @@ public class YubaTechnology extends JavaPlugin implements SlimefunAddon {
          * 它代表了一个3x3的有序合成配方。
          * 该配方所需的机器将在后面通过RecipeType指定。
          */
-        ItemStack[] recipe = { new ItemStack(Material.EMERALD), null, new ItemStack(Material.EMERALD), null, new ItemStack(Material.DIAMOND), null, new ItemStack(Material.EMERALD), null, new ItemStack(Material.EMERALD) };
+        ItemStack[] recipe = {
+                new ItemStack(Material.EMERALD), null, new ItemStack(Material.EMERALD),
+                null, new ItemStack(Material.DIAMOND), null,
+                new ItemStack(Material.EMERALD), null, new ItemStack(Material.EMERALD)
+        };
 
         /*
          * 4. 注册物品
