@@ -3,10 +3,19 @@ package me.luoyangan.yubatechnology;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
+import me.luoyangan.yubatechnology.tasks.ItemRegisterTask;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class YubaTechnology extends JavaPlugin implements SlimefunAddon {
     private static YubaTechnology instance;
+
+    public JavaPlugin getJavaPlugin() {
+        return this;
+    }
+
+    public String getBugTrackerURL() {
+        return "https://luoyangmc.rth1.xyz/";
+    }
 
     @Override
     public void onEnable() {
@@ -17,21 +26,8 @@ public class YubaTechnology extends JavaPlugin implements SlimefunAddon {
         if (cfg.getBoolean("options.auto-update")) {
             // 这里添加自动更新功能
         }
-    }
 
-    @Override
-    public void onDisable() {
-        // 禁用插件的逻辑...
-    }
-
-    @Override
-    public String getBugTrackerURL() {
-        return "https://luoyangmc.rth1.xyz/";
-    }
-
-    @Override
-    public JavaPlugin getJavaPlugin() {
-        return this;
+        ItemRegisterTask.run();
     }
 
     public static YubaTechnology getInstance() {
