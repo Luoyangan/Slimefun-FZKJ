@@ -1,6 +1,5 @@
 package me.luoyangan.yubatechnology.utils;
 
-import me.luoyangan.yubatechnology.SlimefunTutorial;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;

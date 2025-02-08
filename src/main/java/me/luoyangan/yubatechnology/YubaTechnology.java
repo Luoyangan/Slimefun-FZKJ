@@ -19,7 +19,7 @@ public class YubaTechnology extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
-        instance =this;
+        instance = this;
 
         Config cfg = new Config(this);
 
